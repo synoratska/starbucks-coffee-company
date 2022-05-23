@@ -305,7 +305,7 @@ section a {
   margin-bottom: 20px;
 }
 
-/* Padding */
+/*                                         Padding                                                */
 
 .py-sm {
   padding: 10px 0;
@@ -317,6 +317,59 @@ section a {
 
 .py-lg {
   padding: 40px 0;
+}
+
+/*                                        Hamburger Menu Icon                                 */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  transform: rotate(0);
+  transition: all .5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px)
+}
+
+.hamburger-bottom {
+  transform: translateY(14px)
+}
+
+/*                                         Media Queries                                       */
+
+@media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .divider {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box-inner-right {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -335,19 +388,38 @@ section a {
     margin-right: 20px;
   }
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 768px) {
+  .box-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
   .box-inner-right {
-    padding-top: 40px;
+    margin-left: 20px;
+  }
+
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-right {
+    display: none;
   }
 }
 
-@media (min-width: 1440px) {
-  .box {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .divider {
-    max-width: 90%;
-  }
-}
+

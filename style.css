@@ -182,7 +182,6 @@ section a {
   margin-left: 50px;
 }
 
-
 /*            ----------------   Buttons  -------------              */
 
 .btn {
@@ -222,7 +221,6 @@ section a {
 .btn-dark:hover {
   background-color: #333;
 }
-
 
 /* Grid Styles */
 
@@ -330,6 +328,7 @@ section a {
   border: none;
   z-index: 10;
   transition: all 0.25s;
+  display: none;
 }
 
 .hamburger-top,
@@ -342,15 +341,29 @@ section a {
   height: 2px;
   background-color: #000;
   transform: rotate(0);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .hamburger-middle {
-  transform: translateY(7px)
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-  transform: translateY(14px)
+  transform: translateY(14px);
+}
+
+
+.open .hamburger-top {
+transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
 /*                                         Media Queries                                       */
@@ -420,6 +433,8 @@ section a {
   .navbar .navbar-nav-right {
     display: none;
   }
+
+  .hamburger {
+    display: block;
+  }
 }
-
-

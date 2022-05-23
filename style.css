@@ -474,6 +474,11 @@ section a {
     order: 0;
   }
 
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
   .footer {
     text-align: center;
   }

@@ -2,9 +2,11 @@
 
 :root {
   --color-primary: #006241;
-  --color-secondary: #d50032;
+  --color-secondary: #fa91aa;
+  --color-tertiary: #9bf5b4;
   --color-extra: #d4e9e2;
   --color-main: #d4e8f1;
+  --color-section: #d9062f;
 }
 
 * {
@@ -135,7 +137,8 @@ section a {
   font-size: 16px;
 }
 
-.btn-dark-outline:hover {
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
   background-color: rgba(0, 0, 0, 0.06);
 }
 
@@ -144,6 +147,7 @@ section a {
   color: #fff;
   font-size: 16px;
 }
+
 
 .btn-dark {
   background-color: #000;
@@ -164,10 +168,24 @@ section a {
   max-width: 1440px;
   margin: auto;
   margin-top: 32px;
-  background-color: var(--color-main);
+  /* background-color: var(--color-main); */
 }
 
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
 
+.box-text .btn {
+  margin-top: 20px;
+}
+
+.box-f .box-text {
+  max-width: 600px;
+}
 
 .box-inner-left img {
   max-width: 720px;
@@ -182,10 +200,29 @@ section a {
   margin-left: 50px;
 }
 
+/* Grid Styles */
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}
+
 /* Backgrounds */
 
 .bg-primary {
   background-color: var(--color-primary);
+  color: #fff;
+}
+
+.bg-main {
+  background-color: var(--color-main);
   color: #fff;
 }
 
@@ -194,9 +231,19 @@ section a {
   color: #fff;
 }
 
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+  color: #fff;
+}
+
 .bg-extra {
   background-color: var(--color-extra);
   color: #000;
+}
+
+.bg-section {
+  background-color: var(--color-section);
+  color: #fff;
 }
 
 .bg-dark {

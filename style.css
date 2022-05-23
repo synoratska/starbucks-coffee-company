@@ -107,48 +107,37 @@ section a {
   margin: 0 5px;
 }
 
+.footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+}
 
-/*            ----------------   Buttons  -------------              */
+.social img {
+  width: 35px;
+  height: 35px;
+}
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  background: none;
-  border: 1px solid #000;
-  border-radius: 50px;
-  padding: 7px 16px;
-  line-height: 1.2;
-  text-align: center;
+.social {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social a {
   text-decoration: none;
+  margin-right: 20px;
 }
 
-.btn-dark-outline {
-  border-color: #000;
-  color: #000;
-  font-size: 16px;
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px auto;
 }
 
-.btn-dark-outline:hover,
-.btn-light-outline:hover {
-  background-color: rgba(0, 0, 0, 0.06);
-}
-
-.btn-light-outline {
-  border-color: #fff;
-  color: #fff;
-  font-size: 16px;
-}
-
-.btn-dark {
-  background-color: #000;
-  color: #fff;
-}
-
-.btn-dark:hover {
-  background-color: #333;
-}
-
-/*          Banners               */
+/*                                   Banners                         */
 
 .box {
   margin-bottom: 30px;
@@ -192,6 +181,48 @@ section a {
   margin-right: 50px;
   margin-left: 50px;
 }
+
+
+/*            ----------------   Buttons  -------------              */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-dark-outline {
+  border-color: #000;
+  color: #000;
+  font-size: 16px;
+}
+
+.btn-dark-outline:hover,
+.btn-light-outline:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.btn-light-outline {
+  border-color: #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
 
 /* Grid Styles */
 
@@ -315,5 +346,8 @@ section a {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .divider {
+    max-width: 90%;
   }
 }
